@@ -1,39 +1,6 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Abstract Bogie
-abstract class Bogie {
-    String id;
-    String type;
-    int capacity;
-
-    Bogie(String id, String type, int capacity) {
-        this.id = id;
-        this.type = type;
-        this.capacity = capacity;
-    }
-
-    String getType() {
-        return type;
-    }
-
-    abstract void display();
-}
-
-// Passenger Bogie
-class PassengerBogie extends Bogie {
-
-    PassengerBogie(String id, String type, int capacity) {
-        super(id, type, capacity);
-    }
-
-    @Override
-    void display() {
-        System.out.println(id + " | " + type + " | Capacity: " + capacity);
-    }
-}
-
-// UC9
 public class UseCase9 {
 
     public static void main(String[] args) {
